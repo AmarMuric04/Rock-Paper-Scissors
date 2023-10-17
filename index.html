@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="general-wrapper">
+      <div id="button-and-reset-wrapper">
+        <p class="name">Rock Paper Scissors</p>
+        <div id="button-wrapper">
+          <div id="rockScore-button-wrapper">
+            <div id="rockScoreWrapper">
+              <div id="rockScore">
+                <p id="rockWins"></p>
+                <p id="rockWinPercentage"></p>
+                <p id="rockTies"></p>
+                <p id="rockTiesPercentage"></p>
+                <p id="rockLosses"></p>
+                <p id="rockLossPercentage"></p>
+              </div>
+            </div>
+            <button class="button" onclick="playedRock()">✊</button>
+          </div>
+          <div id="paperScore-button-wrapper">
+            <div id="paperScoreWrapper">
+              <div id="paperScore">
+                <p id="paperWins"></p>
+                <p id="paperWinPercentage"></p>
+                <p id="paperTies"></p>
+                <p id="paperTiesPercentage"></p>
+                <p id="paperLosses"></p>
+                <p id="paperLossPercentage"></p>
+              </div>
+            </div>
+            <button class="button" onclick="playedPaper()">🖐</button>
+          </div>
+          <div id="scissorScore-button-wrapper">
+            <div id="scissorScoreWrapper">
+              <div id="scissorsScore">
+                <p id="scissorsWins"></p>
+                <p id="scissorsWinPercentage"></p>
+                <p id="scissorsTies"></p>
+                <p id="scissorsTiesPercentage"></p>
+                <p id="scissorsLosses"></p>
+                <p id="scissorsLossPercentage"></p>
+              </div>
+            </div>
+            <button class="button" onclick="playedScissors()">✌</button>
+          </div>
+        </div>
+        <div class="resetScore-AutoPlay-wrapper">
+          <button class="css-button js-resetScore" onclick="resetScore()">
+            Reset Score
+          </button>
+          <button class="css-button js-autoPlay">Auto Play</button>
+        </div>
+      </div>
+      <div id="resultWrapper">
+        <p id="titleOfResult">Summary:</p>
+        <p id="result">Play the game!</p>
+        <p id="youPlayed"></p>
+        <p id="compPlayed"></p>
+      </div>
+    </div>
+    <div id="score">
+      <div id="score-wrapper">
+        <p id="wins"></p>
+        <p id="ties"></p>
+        <p id="losses"></p>
+      </div>
+      <div id="percentage-wrapper">
+        <p id="winPercentage"></p>
+        <p id="tiePercentage"></p>
+        <p id="lossPercentage"></p>
+      </div>
+    </div>
+    <!-- <button id="antiEpilepsyButton">Turn off changing lights</button> -->
+    <script src="app.js"></script>
+  </body>
+</html>
