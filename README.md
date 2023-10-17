@@ -1,0 +1,5 @@
+# Rock-Paper-Scissors 
+
+CODE IS ALL OVER THE PLACE!!!!!!!
+
+NEEDS TO BE FIXED WHEN I LEARN HOW TO !!!!!
